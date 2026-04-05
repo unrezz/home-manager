@@ -5,7 +5,7 @@
   programs.git = {
     enable = true;
     userName = "unrezz";
-    userEmail = ""
+    userEmail = "mikeypixel87@gmail.com";
       aliases = {
         pu = "push";
         co = "checkout";

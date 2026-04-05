@@ -2,7 +2,7 @@
 
 {
 
-  xdf.mimeApps.defaultApplications = {
+  xdg.mimeApps.defaultApplications = {
     "text/plain" = [ "neovide.desktop" ];
     "application/pdf" = [ "zathura.desktop" ];
     "image/*" = [ "ristretto.desktop" ];
