@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should manage.
@@ -12,6 +12,7 @@
     ./modules/mimeApps.nix
     ./modules/scripts.ex.nix
     ./modules/zsh.nix
+    # ./modules/hypr.nix
   ];
 
   home.packages = [
@@ -31,7 +32,8 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "emacs";
+    EDITOR = "neovim";
+    FLAKE = "/home/unrezz/.config/home-manager";
   };
 
   home.stateVersion = "25.11"; # Avoid unnecessary changing.

@@ -1,12 +1,19 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
 
   gtk = {
+    # gtk4.theme = null;
     enable = true;
-    theme.name = "adw-gtk3";
-    cursorTheme.name = "Bibata-Modern-Ice";
-    iconTheme.name = "GrubvoxPlus";
+    theme.name = "Omni";
+    cursorTheme.name = "Bibata-Original-Ice";
+    iconTheme.name = "Nordzy-purple-dark";
   };
+
+  home.packages = with pkgs; [
+    omni-gtk-theme
+    bibata-cursors
+    nordzy-icon-theme
+  ];
 
 }
