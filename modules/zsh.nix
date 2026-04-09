@@ -5,9 +5,9 @@
   programs = {
 
 # ===== Starship config ============================================================================
-    # starship = {
-    #   enable = true;
-    # };
+    starship = {
+      enable = true;
+    };
 
 # ===== ZSH config
     zsh = {
@@ -39,6 +39,7 @@
         t = "clear && tree -aL 3 && la";
         s = "clear && tree -L 3 && la";
         h = "home-manager switch";
+        m = "termusic";
   
     # • Python shells 
         pyCEC = "nix-shell ~/nixos/shell/python/CEC.nix --run 'cd ~/Documents/Academia/dev/Cálculo_Energético_Computacional/' && zsh";
