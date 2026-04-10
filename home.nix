@@ -11,7 +11,7 @@
     ./modules/homepkgs.nix
     ./modules/mimeApps.nix
     ./modules/scripts.ex.nix
-    ./modules/zsh.nix
+    ./modules/shell/zsh.nix
     # ./modules/hypr.nix
   ];
 

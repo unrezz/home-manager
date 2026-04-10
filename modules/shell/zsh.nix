@@ -2,12 +2,13 @@
 
 {
 
+  imports = [
+    # ./starship.nix
+    ./ohmyposh.nix
+  ];
   programs = {
 
 # ===== Starship config ============================================================================
-    starship = {
-      enable = true;
-    };
 
 # ===== ZSH config
     zsh = {
@@ -22,6 +23,14 @@
 # ===== Aliases ====================================================================================
       shellAliases = {
   
+      # • Nix shortcuts.
+
+        try = "nix-shell -p";
+        nox = "sudo nixos-rebuild switch --flake ~/nixos";
+        ts = "sudo nixos-rebuild test --flake ~/nixos";
+        h = "home-manager switch";
+        f = "nvim flake.nix";
+
         y = "yazi";
         v = "nvim";
         n = "sudo nvim";
@@ -30,15 +39,11 @@
         rbt = "sudo reboot now";
         p = "clear && python3";
         ff = "clear && fastfetch";
-        nox = "sudo nixos-rebuild switch --flake ~/nixos";
-        ts = "sudo nixos-rebuild test --flake ~/nixos";
         wp = "pkill .mpvpaper-wrapp && mpvpaper -fo \"no-audio loop\" eDP-1";
         wpp = "mpvpaper -fo \"no-audio loop\" eDP-1";
-        swu = "swww img ~/Pictures/wallpapers/wallpaper_ushiwakamaru_by_hinoshita_akame.png";
-        swn = "swww img ~/Pictures/wallhaven/wallhaven-nixos.png";
+        swn = "awww img ~/Pictures/wallhaven/wallhaven-kx99jm.png";
         t = "clear && tree -aL 3 && la";
         s = "clear && tree -L 3 && la";
-        h = "home-manager switch";
         m = "termusic";
   
     # • Python shells 
