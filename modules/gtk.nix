@@ -3,17 +3,21 @@
 {
 
   gtk = {
-    # gtk4.theme = null;
+    gtk4.theme = config.gtk.theme;
     enable = true;
+    colorScheme = "dark";
     theme.name = "Omni";
-    cursorTheme.name = "Rose-pine-hyprcursor";
-    iconTheme.name = "Nordzy-purple-dark";
+    cursorTheme.name = "BreezeX-RoséPineDawn";
+    iconTheme.name = "Nordzy-purple";
   };
 
   home.packages = with pkgs; [
     omni-gtk-theme
-    bibata-cursors
     nordzy-icon-theme
+
+    lavanda-gtk-theme
+    rose-pine-cursor
+    arashi
   ];
 
 }
