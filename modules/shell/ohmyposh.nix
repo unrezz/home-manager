@@ -15,7 +15,7 @@
   
       palette = {
         col01  = "#FFddbb";
-        col02  = "#cc3802";
+        col02  = "#8844FF";
         col03  = "#110907";
         col04  = "#222222";
         col05  = "#444444";
@@ -120,21 +120,21 @@
               powerline_symbol = "";
               background = "p:col03";
               foreground = "p:col01";
-              template = " ➜   {{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ";
+              template = " {{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ";
               options = {
-                branch_icon = " ";
+                branch_icon = " ";
                 fetch_status = false;
                 fetch_upstream_icon = true;
               };
             }
-            {
-              type = "os";
-              style = "powerline";
-              powerline_symbol = "";
-              background = "p:col02";
-              foreground = "p:col01";
-              template = " {{ if .WSL }}WSL at {{ end }}{{.Icon }} ";
-            }
+            # {
+            #   type = "os";
+            #   style = "powerline";
+            #   powerline_symbol = "";
+            #   background = "p:col02";
+            #   foreground = "p:col01";
+            #   template = " {{ if .WSL }}WSL at {{ end }}{{.Icon }} ";
+            # }
 
           ];
         }
