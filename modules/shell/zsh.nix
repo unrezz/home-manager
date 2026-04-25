@@ -35,18 +35,15 @@
         sw = "swww img";
         shd = "shutdown now";
         rbt = "sudo reboot now";
-        p = "clear && python3";
+        p = "clear && python";
         ff = "clear && fastfetch";
-        wp = "pkill .mpvpaper-wrapp && mpvpaper -fo \"no-audio loop\" eDP-1";
-        wpp = "mpvpaper -fo \"no-audio loop\" eDP-1";
-        swn = "awww img ~/Pictures/wallhaven/wallhaven-vpoem3.jpg";
         t = "clear && tree -aL 3 && la";
         s = "clear && tree -L 3 && la";
         m = "termusic";
   
     # • Python shells 
-        CEC = "nix-shell /home/unrezz/nixos/shell/CEC.nix";
-        pyHE = "nix-shell ~/nix-shell/python/hapeyes.nix --run zsh && cd ~/proyects/Haptic_eyes/";
+        CEC = "nix-shell ~/nixos/shell/CEC.nix";
+        pyHE = "nix-shell ~/nixos/shell/hapeyes.nix --run";
   
     # • Quick acceses to folders. 
 
